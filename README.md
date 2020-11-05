@@ -1,7 +1,10 @@
 # Bug occurring only with Surface package included
 
-Visiting http://localhost:4000/dashboard/processes works
-Visiting http://localhost:4000/dashboard/home results in Argument error: `assign @inner_content not available in eex template.`
+Visiting http://localhost:4000/dashboard/processes works.
+
+Visiting http://localhost:4000/dashboard/home results in Argument error:
+
+`assign @inner_content not available in eex template.`
 
 
 
