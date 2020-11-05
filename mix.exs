@@ -38,7 +38,13 @@ defmodule MyApp.MixProject do
       {:ecto_sql, "~> 3.4"},
       {:ecto_psql_extras, "~> 0.2"},
       {:postgrex, ">= 0.0.0"},
-      {:phoenix_live_view, "~> 0.14.6"},
+      # {:phoenix_live_view, "~> 0.14.6", override: true},
+      {:phoenix_live_view,
+       github: "phoenixframework/phoenix_live_view",
+       sha: "d12dd7934abffda8ad425095e9abd363dc0f4c4c",
+       override: true},
+
+      # {:phoenix_live_view, [env: :prod, override: true, git: "https://github.com/phoenixframework/phoenix_live_view.git", tag: "f986171cae03747366c3cd1c4f4fea047e1d7196"]},
       {:floki, ">= 0.27.0", only: :test},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
@@ -47,7 +53,8 @@ defmodule MyApp.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:surface, git: "https://github.com/msaraiva/surface.git", tag: "v0.1.0-rc.2"}
     ]
   end
 
